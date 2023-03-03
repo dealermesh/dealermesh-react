@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { DMDealForm, DMDRProvider, DMField, DMSoftCreditForm, DM_EVENT_DR_DEAL_LOADED, DM_EVENT_SOFT_CREDIT_RESULTS, DM_FIELDS, onDMDealTypeChange, useDMEventListener } from "@dealermesh/react";
+import { DMDealForm, DMDRProvider, DMField, DM_EVENT_DR_DEAL_LOADED, DM_FIELDS, onDMDealTypeChange, useDMEventListener } from "@dealermesh/react";
 import Layout from "./Layout";
 
 export default function ConfigurePayments(props) {
@@ -9,7 +9,6 @@ export default function ConfigurePayments(props) {
   const [dealType,setDealType] = useState()
   
   useDMEventListener(DM_EVENT_DR_DEAL_LOADED, event => {
-    console.log(event.detail)  
     setDealType(event.detail.deal_type)
     setQuoteId(event.detail.quote_id)
     setDeal(event.detail)
@@ -56,7 +55,7 @@ export default function ConfigurePayments(props) {
               <h2>Configure Payments</h2>
             </section>
             <section>
-              <DMDealForm className="">
+              <DMDealForm className="form">
               { dealType != 'cash' &&
               <div>
                 <label>Cash Down*</label>
