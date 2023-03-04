@@ -27,7 +27,7 @@ export default function SoftCredit(props) {
               <h2>Soft Credit Check</h2>
             </section>
             <section>
-              <DMSoftCreditForm className="">
+              <DMSoftCreditForm className="form">
                 <div>
                   <label>First Name*</label>
                   <DMField name={DM_FIELDS.SOFT_CREDIT_FIRST_NAME}></DMField>
