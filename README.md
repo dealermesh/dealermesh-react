@@ -11,3 +11,7 @@ https://dealermesh.com/guides/react-js/getting-started
 ## Install
 
 `npm install @dealermesh/react`
+
+## License
+
+MIT
