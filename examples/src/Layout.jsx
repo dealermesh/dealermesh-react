@@ -6,7 +6,8 @@ export default function Layout(props) {
     server: "http://localhost:3002",
     accessToken: "YzdmMjM5YzItODhhZS00MDhjLWExZGMtMGMzZTFiYjYxNjYyLS1TYXVyYXZBcHAtLTIwMjMtMDMtMDFUMDk6MDY6MTItMDU6MDAtODNiNDRlNTUtMDFhYy00YjQxLTg5YWItN2Q5NDVkMmNmNGVlLTE=",
     accessKey: "4iLbplwCsjnkLbeF",
-    vin: props.vin
+    vin: "5XYK6CAF3PG075033",
+    car: { vin: "5XYK6CAF3PG075033" }
   }
   
   return <DMProvider config={config}>

@@ -61,7 +61,7 @@ h4 {
   
 }
 
-.form {
+form {
   display: flex;
   flex-direction: column;
   > div {
@@ -95,17 +95,4 @@ button {
   box-shadow: none;
   border: 0;
   width: 100%;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  .item {
-    flex: 0 0 auto;
-    padding-bottom: 16px;
-    margin-right: 16px;
-  }
-  .selected {
-    border-bottom: 1px solid #990000;
-  }
 }

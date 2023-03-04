@@ -1,26 +1,10 @@
 import { useRouter } from 'next/router';
-import ConfigurePayments from '../src/ConfigurePayments';
-import OfferIncentives from '../src/OfferIncentives';
-import ProtectionPlans from '../src/ProtectionPlans';
 import SoftCredit from '../src/SoftCredit';
-import TradeEstimateKbbValues from '../src/TradeEstimateKbbValues';
-import TradeEstimateTp from '../src/TradeEstimateTp';
 
-export default function Example(props) {
+export default function Example() {
   const router = useRouter()
-  const pageProps = { ...props, vin: "5XYK6CAF3PG075033", msrp: 33740, price: 33740 }
-  if (router.query.slug == 'configure-payments') {
-    return <ConfigurePayments {...pageProps}></ConfigurePayments>
-  } else if (router.query.slug == 'trade-kbb-values') {
-    return <TradeEstimateKbbValues {...pageProps}></TradeEstimateKbbValues>
-  } else if (router.query.slug == 'trade-tp') {
-    return <TradeEstimateTp {...pageProps}></TradeEstimateTp>
-  } else if (router.query.slug == 'soft-credit') {
-    return <SoftCredit {...pageProps}></SoftCredit>
-  } else if (router.query.slug == 'offers') {
-    return <OfferIncentives {...pageProps}></OfferIncentives>
-  } else if (router.query.slug == 'plans') {
-    return <ProtectionPlans {...pageProps}></ProtectionPlans>
+  if (router.query.slug == 'soft-credit') {
+    return <SoftCredit></SoftCredit>
   }
   return (
     <div>
