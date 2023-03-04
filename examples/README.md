@@ -1,6 +1,8 @@
-The examples use NextJS to run. For more detail go to https://nextjs.org/learn/foundations/about-nextjs.
+The examples use NextJS to run and is built in React. For more detail go to https://nextjs.org/learn/foundations/about-nextjs.
 
 ## Installation
+
+Recommended Node Version - 16.8.0 or higher
 
 Clone or download this repository.
 
