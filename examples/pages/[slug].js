@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import ConfigurePayments from '../src/ConfigurePayments';
+import OfferIncentives from '../src/OfferIncentives';
 import SoftCredit from '../src/SoftCredit';
 import TradeEstimateKbbValues from '../src/TradeEstimateKbbValues';
 import TradeEstimateTp from '../src/TradeEstimateTp';
@@ -15,6 +16,8 @@ export default function Example(props) {
     return <TradeEstimateTp {...pageProps}></TradeEstimateTp>
   } else if (router.query.slug == 'soft-credit') {
     return <SoftCredit {...pageProps}></SoftCredit>
+  } else if (router.query.slug == 'offers') {
+    return <OfferIncentives {...pageProps}></OfferIncentives>
   }
   return (
     <div>
