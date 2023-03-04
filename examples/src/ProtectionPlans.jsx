@@ -57,7 +57,7 @@ export default function ProtectionPlans(props) {
         <div className="form-panel">
           <div className="sections">
             <section>
-              <h2>Available Offers/Incentives</h2>
+              <h2>Protection Plans</h2>
             </section>
             <section>
               <DMPlansForm className="form">

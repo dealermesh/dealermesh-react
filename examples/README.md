@@ -10,7 +10,7 @@ Run `npm install` inside the `examples` folder.
 
 ## Setup
 
-Add a config file `.env.development` in the examples folder.
+Add a config file `.env.development` in the `examples` folder.
 
 Add the following to the file:
 
@@ -18,7 +18,6 @@ Add the following to the file:
 DEALERMESH_API_SERVER=https://api.dealermesh.com
 ACCESS_TOKEN=YzdmMjM5Y...5NDVkMmNmNGVlLTE= (your access token)
 ACCESS_KEY=4iLbp...LbeF (your dealer access key)
-
 ```
 
 ## Start Server
